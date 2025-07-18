@@ -2,45 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Teaching | Seyeon Kim</title> 
-  <meta name="description" content="Teaching by Seyeon Kim" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teaching | Seyeon Kim</title>
+  <meta name="description" content="Teaching page of Seyeon Kim, Ph.D. Candidate." />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Libre Baskerville', serif;
-      background-color: #fff;
-      color: #111;
       margin: 0;
       padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
 
     header {
+      background-color: #a93226;
+      color: white;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 30px 20px 20px;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 32px;
-      font-weight: normal;
-      margin: 0 0 25px;
-      color: black;
-    }
-
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      font-size: 16px;
-      flex-wrap: wrap;
-      margin-bottom: 25px;
+      margin-top: 10px;
     }
 
     nav a {
+      color: white;
       text-decoration: none;
-      color: #8C1515;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
     nav a:hover {
@@ -48,52 +41,56 @@
     }
 
     main {
-      max-width: 900px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 0 30px 60px;
+      background-color: white;
     }
 
-    h3 {
-      font-size: 18px;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-weight: bold;
+    section {
+      flex: 2;
+      padding-right: 40px;
     }
 
-    .teaching-section {
-      margin-top: 40px;
+    aside {
+      flex: 1;
+      text-align: center;
     }
 
-    .institution {
-      font-weight: bold;
-      margin-bottom: 10px;
+    .profile-photo {
+      width: 200px;
+      border-radius: 50%;
     }
 
-    .teaching-list {
-      list-style-type: disc;
-      padding-left: 1.5em;
-      margin-top: 10px;
+    h2 {
+      color: #a93226;
     }
 
-    .year {
-      float: right;
-      color: #555;
+    .inline-link {
+      color: #a93226;
+      text-decoration: none;
+    }
+
+    .inline-link:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 24px;
-      }
-
-      nav {
+      main {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        font-size: 14px;
       }
 
-      main {
-        padding: 0 20px 40px;
+      section {
+        padding-right: 0;
+      }
+
+      .profile-photo {
+        display: block;
+        margin: 0 auto;
       }
     }
   </style>
@@ -102,25 +99,30 @@
   <header>
     <h1>Seyeon Kim</h1>
     <nav>
-      <a href="index.html">ABOUT ME</a>   
-      <a href="research.html">RESEARCH</a>
-      <a href="teaching.html">TEACHING</a>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
     </nav>
   </header>
 
   <main>
-    <section class="teaching-section">
-      <h3>Teaching Experience</h3>
-      <div class="institution">Course Assistant, Stanford Graduate School of Business</div>
-      <ul class="teaching-list">
-        <li>“Strategic Leadership” for Jesper Sørensen <span class="year">2022</span></li>
-        <li>“Negotiations” for Jon Atwell <span class="year">2022</span></li>
-        <li>“Acting with Power” for Benoît Monin, Deborah H. Gruenfeld <span class="year">2022–2023</span></li>
+    <section>
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li><strong>ECON 101: Introduction to Economics</strong> – Teaching Assistant, Fall 2023</li>
+        <li><strong>ECON 203: Econometrics</strong> – Teaching Assistant, Spring 2024</li>
+        <li><strong>ECON 305: Game Theory</strong> – Guest Lecturer, Winter 2024</li>
       </ul>
+      <p>You can find my <a class="inline-link" href="https://drive.google.com/file/d/1wYUhzRLIB0mlgRaJ7Rf8K-ku-k5g8nQI/view?usp=sharing" target="_blank">CV here</a>.</p>
     </section>
+
+    <aside>
+      <img src="seyeon.jpg" alt="Seyeon Kim" class="profile-photo" />
+    </aside>
   </main>
 </body>
 </html>
+
 
 
 <!-- <!DOCTYPE html>
