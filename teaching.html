@@ -15,6 +15,131 @@
     }
 
     header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0 0 25px;
+      color: black;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #8C1515;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 30px 60px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .teaching-section {
+      margin-top: 40px;
+    }
+
+    .institution {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .teaching-list {
+      list-style-type: disc;
+      padding-left: 1.5em;
+      margin-top: 10px;
+    }
+
+    .year {
+      float: right;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+      }
+
+      main {
+        padding: 0 20px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seyeon Kim</h1>
+    <nav>
+      <a href="index.html">ABOUT ME</a>   
+      <a href="research.html">RESEARCH</a>
+      <a href="teaching.html">TEACHING</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="teaching-section">
+      <h3>Teaching Experience</h3>
+      <div class="institution">Course Assistant, Stanford Graduate School of Business</div>
+      <ul class="teaching-list">
+        <li>“Strategic Leadership” for Jesper Sørensen <span class="year">2022</span></li>
+        <li>“Negotiations” for Jon Atwell <span class="year">2022</span></li>
+        <li>“Acting with Power” for Benoît Monin, Deborah H. Gruenfeld <span class="year">2022–2023</span></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teaching | Seyeon Kim</title> 
+  <meta name="description" content="Teaching by Seyeon Kim" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Libre Baskerville', serif;
+      background-color: #fff;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
       height: 210px;
       display: flex;
       flex-direction: column;
