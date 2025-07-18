@@ -14,32 +14,28 @@
       padding: 0;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 30px;
-    }
-
     header {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      padding: 30px 0 20px;
-      flex-wrap: wrap;
+      padding: 30px 20px 20px;
+      text-align: center;
     }
 
     header h1 {
       font-size: 32px;
       font-weight: normal;
-      margin: 0;
+      margin: 0 0 25px;
       color: black;
     }
 
     nav {
       display: flex;
+      justify-content: center;
       gap: 40px;
       font-size: 16px;
       flex-wrap: wrap;
+      margin-bottom: 25px;
     }
 
     nav a {
@@ -52,7 +48,9 @@
     }
 
     main {
-      padding-bottom: 60px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 30px 60px;
     }
 
     h3 {
@@ -83,15 +81,8 @@
     }
 
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
       header h1 {
         font-size: 24px;
-        margin-bottom: 15px;
       }
 
       nav {
@@ -101,43 +92,35 @@
         font-size: 14px;
       }
 
-      .container {
-        padding: 0 20px;
-      }
-
       main {
-        padding-bottom: 40px;
+        padding: 0 20px 40px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Seyeon Kim</h1>
-      <nav>
-        <a href="index.html">ABOUT ME</a>   
-        <a href="research.html">RESEARCH</a>
-        <a href="teaching.html">TEACHING</a>
-      </nav>
-    </header>
+  <header>
+    <h1>Seyeon Kim</h1>
+    <nav>
+      <a href="index.html">ABOUT ME</a>   
+      <a href="research.html">RESEARCH</a>
+      <a href="teaching.html">TEACHING</a>
+    </nav>
+  </header>
 
-    <main>
-      <section class="teaching-section">
-        <h3>Teaching Experience</h3>
-        <div class="institution">Course Assistant, Stanford Graduate School of Business</div>
-        <ul class="teaching-list">
-          <li>“Strategic Leadership” for Jesper Sørensen <span class="year">2022</span></li>
-          <li>“Negotiations” for Jon Atwell <span class="year">2022</span></li>
-          <li>“Acting with Power” for Benoît Monin, Deborah H. Gruenfeld <span class="year">2022–2023</span></li>
-        </ul>
-      </section>
-    </main>
-  </div>
+  <main>
+    <section class="teaching-section">
+      <h3>Teaching Experience</h3>
+      <div class="institution">Course Assistant, Stanford Graduate School of Business</div>
+      <ul class="teaching-list">
+        <li>“Strategic Leadership” for Jesper Sørensen <span class="year">2022</span></li>
+        <li>“Negotiations” for Jon Atwell <span class="year">2022</span></li>
+        <li>“Acting with Power” for Benoît Monin, Deborah H. Gruenfeld <span class="year">2022–2023</span></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
-
-
 
 
 <!-- <!DOCTYPE html>
